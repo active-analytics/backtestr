@@ -1,0 +1,14 @@
+Package: backtestr
+Version: 0.1
+Date: 2018-12-24
+Title: Wrangling Code For Backtesting
+Description: Functions that I use for my data wrangling and backtesting.
+Author: Pritam Dalal <pritamdalal@hotmail.com>
+Maintainer: Pritam Dalal <pritamdalal@hotmail.com>
+RoxygenNote: 6.1.1
+License: MIT + file LICENSCE
+Imports: 
+    dplyr,
+    magrittr,
+    RMariaDB,
+    tibble
