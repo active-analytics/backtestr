@@ -9,4 +9,3 @@ db_connection()
 \description{
 Use this function to get a connection to the delta_neutral database
 }
-\keyword{database}

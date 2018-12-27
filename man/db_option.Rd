@@ -9,4 +9,3 @@ db_option(chr_query, exclude_zero_bid)
 \description{
 Retrieves database entries for a specific query
 }
-\keyword{option}

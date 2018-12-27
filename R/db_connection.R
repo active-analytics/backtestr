@@ -1,9 +1,6 @@
 #' Return a connection object to delta_neutral database
 #'
 #' Use this function to get a connection to the delta_neutral database
-#' @keywords database
-
-
 
 db_connection <- function(){
     db_conn <- 

@@ -1,8 +1,7 @@
-#' Retrieve all options for a given chain.
+#' Retrieve all options for a given chain
 #' 
 #' Use this function to get all the option prices for a given trade date,
 #' underlying, expiration combination.
-#' @keywords option
 #' @importFrom magrittr %>%
 #' @export
 #' 

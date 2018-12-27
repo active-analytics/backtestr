@@ -11,4 +11,7 @@ Imports:
     dplyr,
     magrittr,
     RMariaDB,
-    tibble
+    tibble,
+    fOptions,
+    purrr,
+    stringr

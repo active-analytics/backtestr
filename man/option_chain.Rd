@@ -2,7 +2,7 @@
 % Please edit documentation in R/option_chain.R
 \name{option_chain}
 \alias{option_chain}
-\title{Retrieve all options for a given chain.}
+\title{Retrieve all options for a given chain}
 \usage{
 option_chain(trade_date, underlying, expiration,
   exclude_zero_bid = FALSE)
@@ -11,4 +11,3 @@ option_chain(trade_date, underlying, expiration,
 Use this function to get all the option prices for a given trade date,
 underlying, expiration combination.
 }
-\keyword{option}

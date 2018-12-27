@@ -1,7 +1,7 @@
 #' Retrieve all results from a query
 #' 
 #' Retrieves database entries for a specific query
-#' @keywords option
+
 
 
 db_option <- function(chr_query 
