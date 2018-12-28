@@ -1,7 +1,6 @@
 #' Retrieve all options for a given trade date.
 #' 
 #' Use this function to get all the option prices for a given trade date.
-#' @keywords option
 #' @export
 #' 
 option_all <- function(trade_date

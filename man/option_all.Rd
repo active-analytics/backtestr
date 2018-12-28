@@ -9,4 +9,3 @@ option_all(trade_date, exclude_zero_bid = FALSE)
 \description{
 Use this function to get all the option prices for a given trade date.
 }
-\keyword{option}

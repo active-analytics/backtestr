@@ -1,12 +1,9 @@
-#' calculates greeks
+#' Calculates the greeks for each option in a chain
 #' 
-#' Use this function to clean the option chain.
+#' Use this function to calculate greeks for each options in a chain
 #' @export
 #' 
 #'
-
-
-
 greeks <- function(df_otm, d2x, impl_fwd){
     
     ########################    
@@ -32,7 +29,7 @@ greeks <- function(df_otm, d2x, impl_fwd){
     df_otm_with_greeks <- 
         df_otm %>%  
         dplyr::mutate(
-            my_implied_vol = df_implied_vol_inputs %>% 
+            implied_vol = df_implied_vol_inputs %>% 
                 purrr::pmap_dbl(fOptions::GBSVolatility)
         )
     
@@ -50,7 +47,7 @@ greeks <- function(df_otm, d2x, impl_fwd){
             Time = d2x/252,
             r = 0,
             b = 0,
-            sigma = df_otm_with_greeks$my_implied_vol
+            sigma = df_otm_with_greeks$implied_vol
         )
     
     # calculating delta iteratively using purrr:mpap_dbl
@@ -82,7 +79,7 @@ greeks <- function(df_otm, d2x, impl_fwd){
             Time = d2x/252,
             r = 0,
             b = 0,
-            sigma = df_otm_with_greeks$my_implied_vol
+            sigma = df_otm_with_greeks$implied_vol
         )
     
     
@@ -115,7 +112,7 @@ greeks <- function(df_otm, d2x, impl_fwd){
             Time = d2x/252,
             r = 0,
             b = 0,
-            sigma = df_otm_with_greeks$my_implied_vol
+            sigma = df_otm_with_greeks$implied_vol
         )
     
     # calculating theta iteratively using purrr:mpap_dbl
