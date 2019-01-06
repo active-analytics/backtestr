@@ -1,6 +1,7 @@
 #' Retrieve all results from a query
 #' 
 #' Retrieves database entries for a specific query
+#' @export
 
 
 

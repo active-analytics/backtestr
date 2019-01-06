@@ -5,10 +5,14 @@
 #' 
 #' 
 implied_forward <- function(df_full_chain){
-    
     df_forward_calc_data <- 
         df_full_chain %>% 
+        dplyr::filter(ask > 0) %>% # see BUG FIX NOTE
         dplyr::select(type, strike, mid)
+        # BUG FIX NOTE: there were some prices with both bid/ask = 0 for
+        # SPY weeklys that expire on 9/12/2014 for trade-date 9/8/2014, 
+        # when you get a unit testing framework up and running, make sure
+        # to try to create a test for this.s
     
     # separating calls
     df_forward_calc_calls <- 
