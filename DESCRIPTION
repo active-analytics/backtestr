@@ -15,4 +15,5 @@ Imports:
     fOptions,
     purrr,
     stringr,
-    lubridate
+    lubridate,
+    readr
