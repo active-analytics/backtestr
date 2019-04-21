@@ -2,7 +2,7 @@
 % Please edit documentation in R/opt_hist_chain.R
 \name{opt_hist_chain}
 \alias{opt_hist_chain}
-\title{Retrieve all options for a given chain}
+\title{Retrieve all option chain from opt_hist table}
 \usage{
 opt_hist_chain(trade_date, underlying, expiration)
 }

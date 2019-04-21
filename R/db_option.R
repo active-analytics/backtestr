@@ -40,7 +40,7 @@ db_option <- function(chr_query
             , iv_mean = IVMean
             #, iv_bid = IVBid
             #, iv_ask = IVAsk
-            #, delta = Delta
+            , delta = Delta
             #, gamma = Gamma
             #, theta = Theta
             #, vega = Vega
@@ -48,7 +48,7 @@ db_option <- function(chr_query
         ) %>% 
         dplyr::mutate(
             mid = (bid + ask) / 2
-            #, delta = abs(delta)
+            , delta = abs(delta)
         )
     
     if (exclude_zero_bid){
@@ -57,7 +57,8 @@ db_option <- function(chr_query
     }
     
     df_data <- 
-        df_data %>% dplyr::select(underlying_symbol:ask, mid, volume:iv_mean)
+        df_data %>% 
+            dplyr::select(underlying_symbol:ask, mid, volume:iv_mean, delta)
     
     df_data
     

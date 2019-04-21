@@ -1,4 +1,4 @@
-#' Retrieve all options for a given chain
+#' Retrieve all option chain from opt_hist table
 #' 
 #' Use this function to get all the option prices for a given trade date,
 #' underlying, expiration combination.
